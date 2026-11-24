@@ -273,12 +273,14 @@ h3 { font-size: 1.25rem; line-height: 1.25; }
   display: grid;
   place-content: center;
   justify-items: center;
-  gap: 1.15rem;
-  min-height: clamp(18rem, 34vw, 27rem);
-  padding: 2.5rem 1.5rem;
+  gap: .95rem;
+  width: min(100%, 24rem);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  padding: 2rem 1.5rem;
   overflow: hidden;
   border: 1px solid var(--line-strong);
-  border-radius: var(--radius);
+  border-radius: 50%;
   background: var(--surface);
   box-shadow: 0 14px 34px rgba(36, 25, 19, 0.06);
 }
@@ -287,16 +289,16 @@ h3 { font-size: 1.25rem; line-height: 1.25; }
   position: absolute;
   inset: .75rem;
   border: 1px solid var(--line);
-  border-radius: calc(var(--radius) - .35rem);
+  border-radius: 50%;
   pointer-events: none;
 }
 
 .art-brand {
   display: grid;
   place-items: center;
-  width: clamp(9.5rem, 18vw, 13.5rem);
+  width: clamp(9.5rem, 17vw, 12.75rem);
   aspect-ratio: 1;
-  padding: .75rem;
+  padding: .45rem;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: var(--canvas);
@@ -310,14 +312,14 @@ h3 { font-size: 1.25rem; line-height: 1.25; }
 }
 
 .art-caption {
-  padding: .35rem .9rem;
+  padding: .3rem .85rem;
   border: 1px solid var(--line);
   border-radius: 99rem;
   color: var(--muted);
   background: var(--canvas);
-  font-size: .75rem;
+  font-size: .7rem;
   font-weight: 700;
-  letter-spacing: .09em;
+  letter-spacing: .08em;
   text-transform: uppercase;
 }
 
